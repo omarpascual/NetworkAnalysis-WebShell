@@ -49,4 +49,6 @@ We follow the HTTP STREAM and we see that the user agent has changed to sqlmap/1
 <img width="1196" height="523" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/13e3b408-f805-4e0f-857e-1a9c5251e7ea" />
 We find another POST request on packet 14060 with a weird post request. We follow it and we see that it can be some kind of sql attack happening at 16:36:51
 <img width="1196" height="519" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/6245e2c7-a6c4-4f7a-acdd-10457cb02a90" />
+We see that it is encoded so we decode it and get this.
+<img width="969" height="738" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/ce019e60-91d7-417b-a4ec-faec11a8493b" />
 
