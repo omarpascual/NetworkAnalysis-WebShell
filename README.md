@@ -23,3 +23,9 @@ This will show communication between client and server. We see that 172.20.10.2 
 <img width="828" height="437" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/32dd43c0-88eb-4050-ab60-621f5fb6de0a" />
 Scrolling back down on packet #38 we see a POST request. We look into its HTTP stream and see Username:admin and password:Admin%401234. we decode %40 with URL decoder and get @ so we assume the password is Admin@1234
 <img width="1200" height="406" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/e254cb88-3533-4ca2-bece-ac847e092953" />
+Scrolling down we see that in Packet 117 at 2021-02-07 at 16:33:06 with 10.251.96.4 --> 10.251.96.5
+<img width="1170" height="302" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/f760a409-f865-4584-a8af-4a0944a884f8" />
+On Packet 151 we see another SYN/ACK on port 22
+<img width="1174" height="387" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/10248d94-e701-451c-84d7-4e0df2fe4e61" />
+The last packet scan was on packet 2166 at 2021-02-07 at 16:33:06
+<img width="1182" height="259" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/edd3b5c2-44d8-4821-81c4-cc252a2b0e0c" />
