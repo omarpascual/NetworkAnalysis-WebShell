@@ -66,6 +66,25 @@ We want to see if there was a callback on 10.251.96.4 on port 4422. On Packet 16
 <img width="1137" height="145" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/d2f4423b-15e8-4535-982e-6ba775687a8e" />
 We follow the TCP STREAM and see alot of commands.
 <img width="765" height="1156" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/272c49ed-5f1c-466e-aa4e-6953e9f37632" />
+</br>
 We see that IP:10.251.96.5 
+</br>
 Username:www-data
+</br>
 Hostname: bob-appserver
+</br>
+Port Scan Activity started 2021-02-07 16:33:06 (UTC) END 2021-02-07 16:33:06 (UTC)
+</br>
+SOURCE 10.251.96.4:41675 DESTINATION 10.251.96.5 (22/80 opened)
+</br>
+Applications used by 10.251.96.4: GoBuster 3.0.1 (2021-02-07 16:34:05 --> 2021:02:07 16:34:06) | sqlmap 1.4.7 (2021-02-07 16:36:17 --> 2021-02-07 16:37:28)
+</br>
+WebShell Upload name: dbfunctions.php | 2021-02-07 16:40:39 | Source: 10.251.96.4 | Destination 10.251.96.5
+</br>
+Commands ran by 10.251.96.4 via web sehll | id, whoami, pything script for callback
+</br>
+Successful callback to 10.251.96.4:4422 via TCP reverse shell from 10.251.96.5 @ 2021-02-07 16:42:35
+</br>
+Commands ran from webserver via reverse TCP shell | bash -i, whoami, cd, ls, python, rm db
+</br>
+Last oberved activity from 10.251.96.4 was on 2021-02-07 16:45:56
