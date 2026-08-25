@@ -15,3 +15,5 @@ Next we want to see the Conversations, also located in the STATISTICS dropdown. 
 <img width="1194" height="492" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/51a9c793-ae82-45e2-97f3-88b50b1cadba" />
 We then go to TCP tab. Already we see that addr .4 is hitting Addr .5 with source port 41675. We also see that port 80 the bytes are 184 while the others are 118. Same with port 22 if you go down 8. With this we can confirm that 10.251.96.5 has port 80 and 22 open
 <img width="955" height="472" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/42e65226-1534-4f7a-9f79-37a4821fb3be" />
+If we scroll down to the bottom, we see that addr .5 is calling back to addr .4 on port 4422. Below it, we see external IPs 34 and 35. We make a note of those IPs incase.
+<img width="1108" height="487" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/dc40d332-ecbf-410c-8614-006ef8de72c2" />
