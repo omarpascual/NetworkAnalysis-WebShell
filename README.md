@@ -37,5 +37,7 @@ On packet 2215 we see a GET Request and if we follow the HTTP STREAM, we see tha
 <img width="1166" height="277" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/b6ce6982-c9ef-475d-b610-cf7a942d7545" />
 After looking into this we want to look at response code of 200 on IP addr 10.251.96.5 and so we filter it so it only shows those. What we see in the Lenth column, that the numbers are between 623-725. But then on Packet 7725 and 13894 we see an anomoly. Their length is 8494 and 8977 which means that the server responded with something quite large.
 <img width="1179" height="696" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/88f40352-69eb-4605-866e-5ff00584980b" />
+We also want to see when the last time goBuster did a GET request. We see on packet 13661 at 16:34:06 was the last time.
+Scrolling down on Packet 13737 we start to see a couple of browse Chocolate<img width="1189" height="629" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/a9431640-1058-43ed-9943-574cf3f654e5" />
 
 
