@@ -39,5 +39,6 @@ After looking into this we want to look at response code of 200 on IP addr 10.25
 <img width="1179" height="696" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/88f40352-69eb-4605-866e-5ff00584980b" />
 We also want to see when the last time goBuster did a GET request. We see on packet 13661 at 16:34:06 was the last time.
 Scrolling down on Packet 13737 we start to see a couple of browse Chocolate<img width="1189" height="629" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/a9431640-1058-43ed-9943-574cf3f654e5" />
+Packet 13886 we start to see the 10.251.96.4 again and on packet 13889 we see them viewing a info.php.<img width="1186" height="285" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/b2709230-062e-414e-b8b8-1333928deaa0" />
 
 
