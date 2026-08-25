@@ -32,5 +32,6 @@ Going down to packet 2172 we see the first communication from addr .4 to .5 on p
 <img width="1182" height="259" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/b76e825b-dc45-46a2-aeec-8c5db3257602" />
 We scroll down to see the POST request on packet 2190. We follow the HTTP STREAM and see a new username and password with %27. We decode it and it is a single quote '
 <img width="347" height="105" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/3649497e-6233-4516-828d-f0115d2eb770" />
+</br>
 On packet 2215 we see a GET Request and if we follow the HTTP STREAM, we see that the User-Agent is no long Mozillabut gobuster/3.0.1. We make a note of the time 16:34:05
 <img width="1166" height="277" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/b6ce6982-c9ef-475d-b610-cf7a942d7545" />
