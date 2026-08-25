@@ -42,5 +42,8 @@ Scrolling down on Packet 13737 we start to see a couple of browse Chocolate
 <img width="1189" height="629" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/a9431640-1058-43ed-9943-574cf3f654e5" />
 Packet 13886 we start to see the 10.251.96.4 again and on packet 13889 we see them viewing a info.php, and going to packet 13914 we see there is an uploads.
 <img width="1181" height="542" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/edba5140-7fd2-47ee-baa6-5d20523a962d" />
-
+Since there is a uploads directory we also want to see if there is POST directory. Scrolling down, we do see POST on packet 13979
+<img width="1179" height="368" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/c75e4119-5445-4ecb-95c4-99ed8cbde254" />
+We follow the HTTP STREAM and we see that the user agent has changed to sqlmap/1.4.7 (Sqlmap is a tool that automates sql attacks)
+<img width="1196" height="523" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/13e3b408-f805-4e0f-857e-1a9c5251e7ea" />
 
