@@ -35,7 +35,7 @@ We scroll down to see the POST request on packet 2190. We follow the HTTP STREAM
 </br>
 On packet 2215 we see a GET Request and if we follow the HTTP STREAM, we see that the User-Agent is no long Mozillabut gobuster/3.0.1. We make a note of the time 16:34:05
 <img width="1166" height="277" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/b6ce6982-c9ef-475d-b610-cf7a942d7545" />
-After looking into this we want to look at response code of 200 on IP addr 10.251.96.5 and so we filter it so it only shows those. What we see in the Lenth column, that the numbers are between 623-725. But then on Packet 7725 and 13894 we see that their length is 8494 and 8977 which means that the server responded with something quite large.
+After looking into this we want to look at response code of 200 on IP addr 10.251.96.5 and so we filter it so it only shows those. What we see in the Lenth column, that the numbers are between 623-725. But then on Packet 7725 and 13894 we see an anomoly. Their length is 8494 and 8977 which means that the server responded with something quite large.
 <img width="1179" height="696" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/88f40352-69eb-4605-866e-5ff00584980b" />
 
 
