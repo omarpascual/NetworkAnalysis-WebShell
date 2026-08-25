@@ -66,3 +66,6 @@ We want to see if there was a callback on 10.251.96.4 on port 4422. On Packet 16
 <img width="1137" height="145" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/d2f4423b-15e8-4535-982e-6ba775687a8e" />
 We follow the TCP STREAM and see alot of commands.
 <img width="765" height="1156" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/272c49ed-5f1c-466e-aa4e-6953e9f37632" />
+We see that IP:10.251.96.5 
+Username:www-data
+Hostname: bob-appserver
