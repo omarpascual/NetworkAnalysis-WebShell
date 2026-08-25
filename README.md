@@ -62,5 +62,7 @@ We follow packet 16134 and see the uid.
 <img width="826" height="455" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/3467d1e4-3c0c-42f7-93d1-f2c69ad60672" />
 On Packet 16201 at 16:42:35 we see another GET /uploads so we follow the HTTP STREAM and see that it is encoded. <img width="1222" height="332" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/da66fa3e-bb11-45cb-8c69-8fbd82070145" />
 So we decode it and see that they are running python with an import and a connection to 10.251.94.4:4422 and calling a subprocess.<img width="1016" height="677" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/88cb34fe-9477-4187-bcd5-98450fe2ed54" />
-
-
+We want to see if there was a callback on 10.251.96.4 on port 4422. On Packet 16203 at 16:42:35 there was a 3 way handshake
+<img width="1137" height="145" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/d2f4423b-15e8-4535-982e-6ba775687a8e" />
+We follow the TCP STREAM and see alot of commands.
+<img width="765" height="1156" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/272c49ed-5f1c-466e-aa4e-6953e9f37632" />
