@@ -17,3 +17,9 @@ We then go to TCP tab. Already we see that addr .4 is hitting Addr .5 with sourc
 <img width="955" height="472" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/42e65226-1534-4f7a-9f79-37a4821fb3be" />
 If we scroll down to the bottom, we see that addr .5 is calling back to addr .4 on port 4422. Below it, we see external IPs 34 and 35. We make a note of those IPs incase.
 <img width="1108" height="487" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/dc40d332-ecbf-410c-8614-006ef8de72c2" />
+Now lets investigate the Pcap. We first see on packet 14 that it is HTTP, so we right click go to follow and we will follow TCP stream
+<img width="1187" height="623" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/33f3b257-a00d-4205-9bee-061eb473789d" />
+This will show communication between client and server. We see that 172.20.10.2 is a Ubuntu server.
+<img width="828" height="437" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/32dd43c0-88eb-4050-ab60-621f5fb6de0a" />
+Scrolling back down on packet #38 we see a POST request. We look into its HTTP stream and see Username:admin and password:Admin%401234. we decode %40 with URL decoder and get @ so we assume the password is Admin@1234
+<img width="1200" height="406" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/e254cb88-3533-4ca2-bece-ac847e092953" />
