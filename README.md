@@ -52,4 +52,8 @@ We find another POST request on packet 14060 with a weird post request. We follo
 We see that it is encoded so we decode it and get this.
 We see that at the end we see their objective is to open a shell to read the file /etc/passwd
 <img width="969" height="738" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/ce019e60-91d7-417b-a4ec-faec11a8493b" />
+The last POST request from sqlmap happened on packet 15978 at 16:37:28. We want to see if addr 10.251.96.4 uploaded anything onto the web server because they did visit an upload directory. We enter http.request.method == POST && ip.addr == 10.251.96.4 and on packet 16102 at 16:40:39 we see an upload.php (application/x-php)
+We follow the stream and see the Referer with editprofile.php so we can assume the pressed editprofile
+ and theres a button called upload. They clicked on the upload button and uploaded the file dbfuncitons.php
+ <img width="1210" height="591" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/c522d269-8c72-4ec7-a3a7-b839367d2b09" />
 
