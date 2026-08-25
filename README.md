@@ -11,3 +11,5 @@ Its important to see the time frame you are investigating incase you are asked t
 The next we want to check is the Protocol Hierarchy, which is also in the STATISTICS dropdown.
 We see that there was SMB(Server Message Block Protocol), DomainNameSystem, SSH Protocol, and HTTP
 <img width="941" height="686" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/a9cc5dca-f725-49ce-a160-126680a581cd" />
+Next we want to see the Conversations, also located in the STATISTICS dropdown. We want to see what conversations were established. We go the IPv4 tab, and sort it by byte. We see that 10.251.96.4 conversed with 10.251.96.5 and 172.20.10.5 with 172.20.10.2
+<img width="1194" height="492" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/51a9c793-ae82-45e2-97f3-88b50b1cadba" />
