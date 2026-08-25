@@ -56,9 +56,11 @@ The last POST request from sqlmap happened on packet 15978 at 16:37:28. We want 
 We follow the stream and see the Referer with editprofile.php so we can assume the pressed editprofile
  and theres a button called upload. They clicked on the upload button and uploaded the file dbfunctions.php. It was uploaded successfully.
  <img width="1210" height="591" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/c522d269-8c72-4ec7-a3a7-b839367d2b09" />
-On packet 16121 we get an GET /uploads/dbdunctions.php and Packet 16134 we see a GET /uploads/dbfunctions.php?cmd=id at 16:40:51
+On packet 16121 we get an GET /uploads/dbdunctions.php and Packet 16134 we see a GET /uploads/dbfunctions.php?cmd=id at 16:40:51 which the attack initiated its first command id, followed by packet 16144 with whoami.
 <img width="1169" height="423" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/97804b80-22b1-42c9-890c-f084b518cd49" />
 We follow packet 16134 and see the uid.
 <img width="826" height="455" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/3467d1e4-3c0c-42f7-93d1-f2c69ad60672" />
+On Packet 16201 at 16:42:35 we see another GET /uploads so we follow the HTTP STREAM and see that it is encoded. <img width="1222" height="332" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/da66fa3e-bb11-45cb-8c69-8fbd82070145" />
+So we decode it and see that they are running python with an import and a connection to 10.251.94.4:4422 and calling a subprocess.<img width="1016" height="677" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/88cb34fe-9477-4187-bcd5-98450fe2ed54" />
 
 
