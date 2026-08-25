@@ -33,6 +33,7 @@ Going down to packet 2172 we see the first communication from addr .4 to .5 on p
 We scroll down to see the POST request on packet 2190. We follow the HTTP STREAM and see a new username and password with %27. We decode it and it is a single quote '
 <img width="347" height="105" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/3649497e-6233-4516-828d-f0115d2eb770" />
 </br>
+</br>
 On packet 2215 we see a GET Request and if we follow the HTTP STREAM, we see that the User-Agent is no long Mozillabut gobuster/3.0.1. We make a note of the time 16:34:05
 <img width="1166" height="277" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/b6ce6982-c9ef-475d-b610-cf7a942d7545" />
 After looking into this we want to look at response code of 200 on IP addr 10.251.96.5 and so we filter it so it only shows those. What we see in the Lenth column, that the numbers are between 623-725. But then on Packet 7725 and 13894 we see an anomoly. Their length is 8494 and 8977 which means that the server responded with something quite large.
@@ -42,8 +43,10 @@ Scrolling down on Packet 13737 we start to see a couple of browse Chocolate
 <img width="1189" height="629" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/a9431640-1058-43ed-9943-574cf3f654e5" />
 Packet 13886 we start to see the 10.251.96.4 again and on packet 13889 we see them viewing a info.php, and going to packet 13914 we see there is an uploads.
 <img width="1181" height="542" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/edba5140-7fd2-47ee-baa6-5d20523a962d" />
-Since there is a uploads directory we also want to see if there is POST directory. Scrolling down, we do see POST on packet 13979
+Since there is a uploads directory we also want to see if there is POST directory. Scrolling down, we do see POST on packet 13979 at 16:36:17
 <img width="1179" height="368" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/c75e4119-5445-4ecb-95c4-99ed8cbde254" />
-We follow the HTTP STREAM and we see that the user agent has changed to sqlmap/1.4.7 (Sqlmap is a tool that automates sql attacks)
+We follow the HTTP STREAM and we see that the user agent has changed to sqlmap/1.4.7 (Sqlmap is a tool that automates sql attacks) They also tried to log in using user and pass
 <img width="1196" height="523" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/13e3b408-f805-4e0f-857e-1a9c5251e7ea" />
+We find another POST request on packet 14060 with a weird post request. We follow it and we see that it can be some kind of sql attack happening at 16:36:51
+<img width="1196" height="519" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/6245e2c7-a6c4-4f7a-acdd-10457cb02a90" />
 
