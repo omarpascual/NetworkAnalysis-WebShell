@@ -54,6 +54,11 @@ We see that at the end we see their objective is to open a shell to read the fil
 <img width="969" height="738" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/ce019e60-91d7-417b-a4ec-faec11a8493b" />
 The last POST request from sqlmap happened on packet 15978 at 16:37:28. We want to see if addr 10.251.96.4 uploaded anything onto the web server because they did visit an upload directory. We enter http.request.method == POST && ip.addr == 10.251.96.4 and on packet 16102 at 16:40:39 we see an upload.php (application/x-php)
 We follow the stream and see the Referer with editprofile.php so we can assume the pressed editprofile
- and theres a button called upload. They clicked on the upload button and uploaded the file dbfuncitons.php
+ and theres a button called upload. They clicked on the upload button and uploaded the file dbfunctions.php. It was uploaded successfully.
  <img width="1210" height="591" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/c522d269-8c72-4ec7-a3a7-b839367d2b09" />
+On packet 16121 we get an GET /uploads/dbdunctions.php and Packet 16134 we see a GET /uploads/dbfunctions.php?cmd=id
+<img width="1169" height="423" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/97804b80-22b1-42c9-890c-f084b518cd49" />
+We follow packet 16134 and see the uid.
+<img width="826" height="455" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/3467d1e4-3c0c-42f7-93d1-f2c69ad60672" />
+
 
