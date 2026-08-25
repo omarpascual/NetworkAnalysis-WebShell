@@ -1,4 +1,4 @@
-# NetworkAnalysis-WebShell
+<img width="1181" height="542" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/11e2704d-21cf-4473-a7ae-68108c562813" /># NetworkAnalysis-WebShell
 This is a retired lab located with BlueTeamLabs
 We first download the file from their website and unzip it in a controlled environment.
 We use wireshark to analyze the pcap. The First thing i like to do is look at the Capture File Properties by going to STATISTICS at the top.
@@ -38,7 +38,9 @@ On packet 2215 we see a GET Request and if we follow the HTTP STREAM, we see tha
 After looking into this we want to look at response code of 200 on IP addr 10.251.96.5 and so we filter it so it only shows those. What we see in the Lenth column, that the numbers are between 623-725. But then on Packet 7725 and 13894 we see an anomoly. Their length is 8494 and 8977 which means that the server responded with something quite large.
 <img width="1179" height="696" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/88f40352-69eb-4605-866e-5ff00584980b" />
 We also want to see when the last time goBuster did a GET request. We see on packet 13661 at 16:34:06 was the last time.
-Scrolling down on Packet 13737 we start to see a couple of browse Chocolate<img width="1189" height="629" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/a9431640-1058-43ed-9943-574cf3f654e5" />
+Scrolling down on Packet 13737 we start to see a couple of browse Chocolate
+<img width="1189" height="629" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/a9431640-1058-43ed-9943-574cf3f654e5" />
 Packet 13886 we start to see the 10.251.96.4 again and on packet 13889 we see them viewing a info.php, and going to packet 13914 we see there is an uploads.
-![Uploading Screenshot 2026-08-25 160211.png…]()
+<img width="1181" height="542" alt="Screenshot 2026-08-25 160211" src="https://github.com/user-attachments/assets/edba5140-7fd2-47ee-baa6-5d20523a962d" />
+
 
